@@ -18,7 +18,7 @@ public class SelectUser {
     PreparedStatement statement = null;
 
     try {
-      Class.forName("com.mysql.cj.jdbc.Driver");
+//      Class.forName("com.mysql.cj.jdbc.Driver");
       con = DriverManager.getConnection("jdbc:mysql://localhost/java", "root", "my-secret-pw");
       String sql = " select FirstName, LastName, UserNameEmail, PW "
           + " from Users where UserNameEmail = ? AND PW = ?";

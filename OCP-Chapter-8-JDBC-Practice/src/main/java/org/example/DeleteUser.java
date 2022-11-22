@@ -11,6 +11,7 @@ public class DeleteUser {
     PreparedStatement statement = null;
 
     try {
+      // This is deprecated since Java 6
       Class.forName("com.mysql.cj.jdbc.Driver");
       con = DriverManager.getConnection("jdbc:mysql://localhost/java", "root", "my-secret-pw");
 
